@@ -1,0 +1,10 @@
+<meta charset="utf-8">
+<script>
+    // Lê o valor informado
+    var valor = Number(prompt("Qual o valor do produto?: "));
+    // Calculos de desconto e parcelas
+    var aVista = valor - (valor * 0.10);
+    var parcelado = valor / 3;
+    // Exibe o resultado
+    alert("Preço R$: " + valor.toFixed(2) + "\nÀ Vista R$: " + aVista.toFixed(2) + "\nOu 3x de R$: " + parcelado.toFixed(2));
+</script>
