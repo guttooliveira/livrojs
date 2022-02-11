@@ -39,3 +39,17 @@ function calcularPeso() {
     // cria referencia ao elemento btCalcular e registra o evento associado a calcularPeso
     var btCalcular = document.getElementById('btCalcular');
     btCalcular.addEventListener('click', calcularPeso);
+
+    function limparCampos() {
+        // Limpa os conteúdos dos elementos
+        document.getElementById('inNome').value = "";
+        document.getElementById('rbMasculino').checked = "";
+        document.getElementById('rbFeminino').checked = "";
+        document.getElementById('inAltura').value = "";
+        document.getElementById('outResposta').textContent = "";
+        // posiciona (joga o foco) no elemento inNome
+        document.getElementById('inNome').focus ();
+    }
+
+    var btLimpar = document.getElementById('btLimpar');
+    btLimpar.addEventListener('click', limparCampos);
